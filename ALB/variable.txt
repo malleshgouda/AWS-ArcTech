@@ -1,0 +1,27 @@
+
+###########  Variable declaration for Autoscaling Group  #####
+
+variable "use_name_prefix" {
+  description = "Creating a unique name beginning with the specified prefix.conflicts with name"
+  type = string
+  default = null
+}
+
+variable "min_size" {
+  description = "Minimum number of instance launched"
+  type = number
+  default = 1
+}
+
+variable "max_size" {
+  description = "maximum number of instance launched"
+  type = number
+  default = 1
+}
+
+variable "desired_capacity" {
+  description = "minimum number of instance launched"
+  type = number
+  default = 1
+}
+

@@ -1,0 +1,5 @@
+
+
+output "subnets" {
+    value = aws_vpc.Myvpc.id
+}
